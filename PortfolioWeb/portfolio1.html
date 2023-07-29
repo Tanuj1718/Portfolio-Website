@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9846afa723.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="/images/WhatsApp Image 2023-07-20 at 15.41.11.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Developer and Learner</p>
+                <h1>Hi, I'm <span> Tanuj</span><br> Nainwal</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------About----------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/images/IMG_20230621_111818_998-01.jpeg.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub_title">About Me</h1>
+                    <p>Ambitious and versatile technology enthusiast with a passion of exploring new technologies which solve the genuine problems. I always eager to know how a particular thing is practically applicable for problem solving. <br>
+                        Currently, I am actively enganged in Python and expanding my knowledge and skills so that I can work on diverse range of projects. I always try to contribute positively on that area which I choose. </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Frontend/Backend Development</li>
+                            <li><span>Python</span><br>Basics of Python</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>-</span><br>-</li>
+                            <li><span>-</span><br>-</li>
+                            <li><span>-</span><br>-</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-Present</span><br>B.Tech. from BTKIT Dwarahat</li>
+                            <li><span>2022</span><br>12th from Nainital</li>
+                            <li><span>2020</span><br>10th from Nainital</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------Services------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Developer</h2>
+                    <p>I possess a good skill set in frontend web development and have been actively expanding my knowledge towards this. I have some projects which are available on my Github profile.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI / UX Design</h2>
+                    <p>In the field of UI/UX design, I am currently a beginner but I'm eager to explore this area. I am exploring the skills such as wireframing, user research and design tools like Adobe XD, Figma, Sketch etc.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python Projects</h2>
+                    <p>I have built good fundamentals in python and have made some basic level projects. Currently I am exploring different libraries such as Numpy, Matplotib, Pandas etc.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------Portfolio -------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work1.webp" alt="">
+                    <div class="layer">
+                        <h3>Codes</h3>
+                        <p>Code files of C, Javascript, Python are available on my GitHub profile.</p>
+                        <a href="https://github.com/Tanuj1718"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work2.jpeg" alt="">
+                    <div class="layer">
+                        <h3>Hotel Landing Page</h3>
+                        <p>A hotel landing page made by using HTML5 and CSS. </p>
+                        <a href="https://drive.google.com/file/d/1cUVfKnGEAQf1V_OqbD6T3zBbsL9onitZ/view?usp=drivesdk"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work3.jpeg" alt="">
+                    <div class="layer">
+                        <h3>Games</h3>
+                        <p>A demo of a basic game as a personal project using Javascript.</p>
+                        <a href="https://drive.google.com/file/d/1iMFEYDsP8duTnMi5jb-LPZQlEJ44JkBd/view?usp=drivesdk"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Tanuj1718" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- ------------------Contact--------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> nainwaltanuj9389@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>874757xxxx</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/tanuj.nainwal.5"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://instagram.com/_tanuj_1718?igshid=MzNlNGNkZWQ4Mg=="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/tanujn"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://twitter.com/tanuj_nainwal?t=dMgmKZAgeps640q6WJXKdQ&s=08"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <a href="/images/Tanuj's Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------bottom---------------- -->
+    <div class="copyright">
+        <p>Copyright &copy; Tanuj Nainwal. All Rights Are Reserved.</p>
+    </div>
+</body>
+<script src="portfolio1.js"></script>
+</html>
